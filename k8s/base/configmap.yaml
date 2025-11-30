@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: go-httpbin-config
+  namespace: go-httpbin
+  labels:
+    app.kubernetes.io/name: go-httpbin
+    app.kubernetes.io/part-of: eks-go-httpbin
+data:
+  # This ConfigMap is intentionally minimal and can be extended
+  # as needed for additional configuration.
+  log_level: "info"

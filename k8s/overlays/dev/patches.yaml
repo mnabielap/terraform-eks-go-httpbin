@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-httpbin
+  namespace: go-httpbin
+spec:
+  replicas: 2
+  template:
+    spec:
+      containers:
+        - name: go-httpbin
+          env:
+            - name: ENVIRONMENT
+              value: "dev"
+            - name: GODEBUG
+              value: "http2server=0"

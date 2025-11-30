@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-httpbin
+  namespace: go-httpbin
+spec:
+  replicas: 3
+  template:
+    spec:
+      containers:
+        - name: go-httpbin
+          resources:
+            requests:
+              cpu: "200m"
+              memory: "256Mi"
+            limits:
+              cpu: "1000m"
+              memory: "512Mi"
+          env:
+            - name: ENVIRONMENT
+              value: "prod"
+            - name: GODEBUG
+              value: "http2server=0"

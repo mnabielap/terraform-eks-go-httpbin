@@ -1,0 +1,75 @@
+# =========================
+# OS / editor junk files
+# =========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Vim / editor swap files
+*.swp
+*.swo
+
+# JetBrains / IntelliJ IDEA
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Backup / temp files
+*.tmp
+*.temp
+*.bak
+
+# Logs
+logs/
+*.log
+
+# =========================
+# Terraform
+# =========================
+
+# Local .terraform directories
+**/.terraform/
+
+# Terraform state files
+terraform.tfstate
+terraform.tfstate.*
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Sensitive variable files
+*.tfvars
+*.tfvars.json
+
+# Override files (local only)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform CLI config
+.terraformrc
+terraform.rc
+
+# =========================
+# Kubernetes / config
+# =========================
+
+# Local kubeconfig files
+kubeconfig
+kubeconfig-*
+.kube/
+
+# Optional: ignore files that may contain secrets
+*secret*.yaml
+
+# =========================
+# Env files
+# =========================
+.env
+.env.*

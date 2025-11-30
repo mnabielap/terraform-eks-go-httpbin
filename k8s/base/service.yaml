@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: go-httpbin
+  namespace: go-httpbin
+  labels:
+    app.kubernetes.io/name: go-httpbin
+    app.kubernetes.io/part-of: eks-go-httpbin
+spec:
+  type: ClusterIP
+  selector:
+    app.kubernetes.io/name: go-httpbin
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
+      protocol: TCP

@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: go-httpbin
+  labels:
+    app.kubernetes.io/name: go-httpbin
+    app.kubernetes.io/part-of: eks-go-httpbin
