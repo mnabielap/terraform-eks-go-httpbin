@@ -38,7 +38,7 @@ From the `terraform` directory:
 ```bash
 cd terraform
 terraform test
-````
+```
 
 Terraform will:
 

@@ -23,7 +23,7 @@ The actual resources are defined in the parent `terraform` directory.
       path = "../../state/prod/terraform.tfstate"
     }
   }
-````
+  ```
 
 This shows where you would store Terraform state for a prod environment if you choose to separate dev/prod state. In a real-world setup, you might move this into its own backend config or use S3 + DynamoDB instead.
 

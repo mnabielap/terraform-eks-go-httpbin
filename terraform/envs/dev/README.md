@@ -22,7 +22,7 @@ The **main Terraform configuration** still lives in the parent folder: `../..` (
       path = "../../state/dev/terraform.tfstate"
     }
   }
-````
+  ```
 
 > 📝 This shows how you might separate dev/prod state paths.
 > For simplicity, you can also run Terraform directly from the root `terraform` folder without using this file.
